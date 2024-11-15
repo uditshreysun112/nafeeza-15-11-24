@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  #logo {
+    height: 90px;
+    width: 100px;
+    background-color: aliceblue;
+    border-radius: 100%;
+  }
+  
+          /* Fixed header styling */
+          .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #003366;
+            color: white;
+            z-index: 10;
+            padding: 10px 20px;
+            transition: top 0.3s; /* Smooth transition for hiding */
+        }
+
+        /* Header top styling */
+        .header-top {
+            display: flex;
+            justify-content: space-between; /* Space between logo and contact info */
+            align-items: center; /* Center align items vertically */
+            font-size: 14px;
+            padding-bottom: 5px;
+        }
+
+        .contact-info {
+            text-align: right; /* Align contact info to the right */
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .nav-toggle {
+            display: none;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: white;
+            flex-wrap: wrap;
+        }
+
+        .header-nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        .header-nav a:hover {
+            color: #007bff;
+        }
+
+        .header .apply-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .header .apply-button:hover {
+            background-color: #0056b3;
+        }
+  
+  /* Main content with background image */
+  .content {
+    margin-top: 150px; /* Push content below the fixed header */
+    color: white;
+    position: relative;
+    background-image: url('superyacht-pursers-header.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; /* Set height for background image section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+  .content h1:hover{
+    color: #007bff;
+  }
+  .content p:hover{
+    color: #007bff;
+  }
+  .content p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+  /* courses background image */
+  .courses-content {
+    margin-top: 150px; /* Push content below the fixed header */
+    color: white;
+    position: relative;
+    background-image: url('yacht-brokerage-header.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; /* Set height for background image section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .courses-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+  .courses-content h1:hover{
+    color: #007bff;
+  }
+  .courses-content p:hover{
+    color: #007bff;
+  }
+  .courses-content p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+  /* about background image */
+  .about-content {
+    margin-top: 150px; /* Push content below the fixed header */
+    color: white;
+    position: relative;
+    background-image: url('superyacht-management-header.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; /* Set height for background image section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .about-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+  .about-content h1:hover{
+    color: #007bff;
+  }
+  .about-content p:hover{
+    color: #007bff;
+  }
+  
+  .about-content p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+
+  .news-content {
+    margin-top: 150px; /* Push content below the fixed header */
+    color: white;
+    position: relative;
+    background-image: url('news-image.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; /* Set height for background image section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .news-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+  .news-content h1:hover{
+    color: #007bff;
+  }
+  .news-content p:hover{
+    color: #007bff;
+  }
+  .news-content p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+  .career-content {
+    margin-top: 150px; /* Push content below the fixed header */
+    color: white;
+    position: relative;
+    background-image: url('ship-surveying-header.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; /* Set height for background image section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .career-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+  .career-content h1:hover{
+    color: #007bff;
+  }
+  .career-content p:hover{
+    color: #007bff;
+  }
+  
+  .career-content p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+  .contact-content {
+    margin-top: 150px; /* Push content below the fixed header */
+    color: white;
+    position: relative;
+    background-image: url('contact-image.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; /* Set height for background image section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .contact-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+  .contact-content h1:hover{
+    color: #007bff;
+  }
+  .contact-content p:hover{
+    color: #007bff;
+  }
+  
+  .contact-content p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+
+  .card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image-wrapper {
+    overflow: hidden; /* Restricts image overflow */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: blur(3px);
+}
+
+/* Zoom in effect only on image when hovering over the card */
+.card:hover img {
+    transform: scale(1.1);
+    filter: blur(0px);
+}
+
+/* Optional overlay */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 40, 181, 0.4); /* Semi-transparent overlay */
+    transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+}
+
+.card:hover .card-overlay {
+    background-color: rgba(30, 0, 255, 0);
+}
+
+/* .card-content {
+    padding: 20px;
+    color: white;
+    z-index: 2;
+} */
+
+  
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .header-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-nav {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+  
+    .header-nav.active {
+      max-height: 500px;
+    }
+  
+    .header-nav a {
+      margin: 5px 0;
+    }
+  
+    /* Toggle button for navbar */
+    .nav-toggle {
+      display: block;
+      background-color: #003366;
+      color: white;
+      font-size: 20px;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  
+    .content {
+      height: 60vh; /* Reduce height for smaller screens */
+      padding: 20px;
+    }
+  
+    .content h1 {
+      font-size: 2.5em;
+    }
+  
+    .content p {
+      font-size: 1em;
+    }
+  }
+  
+  /* Show the navigation when the nav is active */
+  .header-nav.active {
+    display: flex;
+  }
+
+  /* stats card */
+  .card-stats {
+    background-color: rgb(42, 42, 42) !important;
+    color: rgb(80, 88, 253);
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    max-width: 400px; /* Optional width limit */
+}
+
+.card-stats:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-stats img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.img-box {
+    background-color: rgb(133, 231, 231);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#gpr{
+    /* padding: 90px 30px; */
+    /* height: 200px; */
+    /* padding: 20px; */
+    /* color: white; */
+    margin-top: 30%;
+    padding: 5px;
+    z-index: 2;
+    
+    color: white;
+}
+#gpr:hover{
+    /* color: rgb(91, 160, 255); */
+    /* background-color: rgb(6, 5, 36); */
+    color: white;
+    background-color: #003366;
+   
+}
+
+/* coures button */
+
+.courses-button{
+  background-color: #0056b3;
+  border-radius: 5px;
+  border: 3px solid #0056b3;
+  color: white;
+  padding: 5px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px 40px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.courses-button:hover{
+  background: none;
+  border: 3px solid #0056b3;
+  color: #0056b3;
+  transition: 0.2s;
+}
+
+.contact-form{
+  padding: 50px 30px;
+  background-color: rgb(27, 27, 27);
+  border-radius: 5px;
+}
+.name-input{
+  padding: 5px;
+  margin: 0px 10px;
+  width: 20%;
+}
+.email-input{
+  padding: 5px;
+  margin: 0px 10px;
+  width: 20%;
+}
+.course-input{
+  padding: 5px ;
+  margin: 0px 10px;
+  width: 20%;
+}
+#query{
+  width: 66%;
+  padding: 5px;
+  
+}
+/* Mobile phones (576px and smaller) */
+@media (max-width: 576px) {
+  .contact-form {
+    font-size: 14px;
+    padding: 20px; /* Reduce padding for mobile */
+  }
+
+  /* Make inputs stack in a column */
+  .name-input, .email-input, .course-input, #query {
+    width: 100%; /* Full width on mobile */
+    margin: 10px 0; /* Add vertical margin and remove horizontal margin */
+  }
+}
